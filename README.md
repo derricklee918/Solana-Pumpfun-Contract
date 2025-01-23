@@ -4,7 +4,7 @@ This is the Pump.fun smart contract developed using Rust and Anchor.
 ## Clone Project
 
 ```bash
-   git clone https://github.com/derricklee918/Sol-Pumpfun-Contract.git
+   git clone https://github.com/derricklee918/Solana-Pumpfun-Contract.git
    cd Sol-Pumpfun-Contract
    npm install
    ```
