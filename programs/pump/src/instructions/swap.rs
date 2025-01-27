@@ -73,17 +73,17 @@ pub struct Swap<'info> {
     )]
     pub pool_token_account_one: Box<Account<'info, TokenAccount>>,
 
-    #[account(
-        mut,
-        associated_token::mint = mint_token_one,
-        associated_token::authority = user,
-    )]
-    pub user_token_account_one: Box<Account<'info, TokenAccount>>,
+    // #[account(
+    //     mut,
+    //     associated_token::mint = mint_token_one,
+    //     associated_token::authority = user,
+    // )]
+    // pub user_token_account_one: Box<Account<'info, TokenAccount>>,
 
-    #[account(mut)]
-    pub user: Signer<'info>,
-    pub rent: Sysvar<'info, Rent>,
-    pub system_program: Program<'info, System>,
-    pub token_program: Program<'info, Token>,
-    pub associated_token_program: Program<'info, AssociatedToken>,
+    // #[account(mut)]
+    // pub user: Signer<'info>,
+    // pub rent: Sysvar<'info, Rent>,
+    // pub system_program: Program<'info, System>,
+    // pub token_program: Program<'info, Token>,
+    // pub associated_token_program: Program<'info, AssociatedToken>,
 }
