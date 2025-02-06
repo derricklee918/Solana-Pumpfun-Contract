@@ -80,13 +80,6 @@ pub struct AddLiquidity<'info> {
     )]
     pub pool_token_account_one: Box<Account<'info, TokenAccount>>,
 
-    // #[account(
-    //     mut,
-    //     associated_token::mint = mint_token_two,
-    //     associated_token::authority = pool
-    // )]
-    // pub pool_token_account_two: Box<Account<'info, TokenAccount>>,
-
     #[account(
         mut,
         associated_token::mint = mint_token_one,
@@ -94,12 +87,6 @@ pub struct AddLiquidity<'info> {
     )]
     pub user_token_account_one: Box<Account<'info, TokenAccount>>,
 
-    // #[account(
-    //     mut,
-    //     associated_token::mint = mint_token_two,
-    //     associated_token::authority = user,
-    // )]
-    // pub user_token_account_two: Box<Account<'info, TokenAccount>>,
 
     #[account(mut)]
     pub user: Signer<'info>,
